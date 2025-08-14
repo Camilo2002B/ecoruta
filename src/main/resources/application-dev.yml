@@ -1,0 +1,34 @@
+server:
+  port: 8033
+  servlet:
+    context-path: /api/v1/ecoruta
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: EcoRuta
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecoruta
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate.default_schema: ecoruta
+      jdbc:
+        lob:
+          non_contextual_creation: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health
+      health:
+        show-details: always

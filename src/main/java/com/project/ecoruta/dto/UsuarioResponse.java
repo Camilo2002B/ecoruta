@@ -1,0 +1,30 @@
+package com.project.ecoruta.dto;
+
+import com.project.ecoruta.model.RolesEntity;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class UsuarioResponse {
+
+  private Long id;
+
+  private String nombre;
+
+  private String email;
+
+  private String cedula;
+
+  private String telefono;
+
+  private String localidad;
+
+  private int puntosAcumulados;
+
+  private RolesEntity rol;
+}
