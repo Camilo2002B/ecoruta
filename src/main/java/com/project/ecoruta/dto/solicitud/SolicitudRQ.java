@@ -1,0 +1,25 @@
+package com.project.ecoruta.dto.solicitud;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class SolicitudRQ {
+
+  private Long id;
+
+  private Long usuarioId;
+
+  private LocalDate fechaSolicitud;
+
+  private LocalTime horaSolicitud;
+
+  private String residuos;
+}

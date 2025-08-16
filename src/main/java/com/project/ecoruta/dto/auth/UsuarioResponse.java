@@ -1,4 +1,4 @@
-package com.project.ecoruta.dto;
+package com.project.ecoruta.dto.auth;
 
 import com.project.ecoruta.model.RolesEntity;
 import lombok.AllArgsConstructor;

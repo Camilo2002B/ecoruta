@@ -1,4 +1,4 @@
-package com.project.ecoruta.dto;
+package com.project.ecoruta.dto.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

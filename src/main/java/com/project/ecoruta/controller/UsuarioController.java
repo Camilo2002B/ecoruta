@@ -1,8 +1,8 @@
 package com.project.ecoruta.controller;
 
-import com.project.ecoruta.dto.LoginRQ;
-import com.project.ecoruta.dto.UsuarioResponse;
-import com.project.ecoruta.dto.UsuarioRQ;
+import com.project.ecoruta.dto.auth.LoginRQ;
+import com.project.ecoruta.dto.auth.UsuarioResponse;
+import com.project.ecoruta.dto.auth.UsuarioRQ;
 import com.project.ecoruta.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
